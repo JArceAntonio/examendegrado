@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="container">
+    
+<h1>Hotel Express</h1>
+<div class="row" id="app">
+    <!-- <div class="col-xs-6">
+       <div class="panel panel-primary">
+            <div class="panel-heading">
+                Enviar Notificacion
+            </div>
+            <div class="panel-body">
+                
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" v-model="asunto"
+                               placeholder="Introduce el asunto">
+                               
+                      </div>
+                      <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" v-model="textMessage"
+                               placeholder="Introduce el mensaje"></textarea>
+                               
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                
+            </div>
+       </div>     
+    </div> -->
+    <div class="col-xs-3"></div>
+    
+    <div class="col-xs-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Enviar SMS
+            </div>
+            <div class="panel-body">
+                    <div class="form-group">
+                        <label for="titulo">Numero</label>
+                        <input type="number" class="form-control" id="titulo" v-model="tituloSms"
+                               placeholder="Introduce el asunto">
+                      </div>
+                      <div class="form-group">
+                        <label for="sms">Mensaje</label>
+                        <textarea class="form-control" id="sms" rows="4" v-model="smsMessage"
+                               placeholder="Introduce el sms"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary" @click="enviarSms">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3"></div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.307.0.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
